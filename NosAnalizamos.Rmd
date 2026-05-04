@@ -16,8 +16,12 @@ knitr::opts_chunk$set(echo = TRUE)
 # 4. Cargar los datos
 #   - Averiguar codificación si los datos son de tipo texto
 #   - ReadLines(NOT TABULAR; - LECT. TABULAR(readr)
+# 5. Ver estructura e identificar tipo de variables
+
+# Si tiene un 50% de datos faltantes, lo sensato sería quitarlo
 ```
 
+- Factor: **`r Factor`**
 
 
 Importación de los datos
