@@ -1,0 +1,228 @@
+8-6-2002				Fecha	Fecha de nacimiento en formato dd-mm-yyyy															
+sercama3		..		Identificación	Usuario de correo UV. martsobm															
+19				Age	Edad en años.															
+Masculino				Sex	Sexo: Femenino, Masculino															
+18				Wr.Hnd	Distancia del extremo del meñique al extremo del pulgar de la mano con la que escribimos. (en centímetros) PALMO															
+Derecha				NW.Hnd	Mano con la que escribes: Izquierda, Derecha															
+Izquierdo				Fold	Cruza los brazos. Qué brazo está arriba ?: Izquierdo, Derecho															
+62				Pulse	Cuál es tu ritmo cardíaco, en reposo, en latidos por minuto.															
+Der s Izq				Clap 	Aplaude. ¿Cómo están las manos ?. 3 casos. 'Der s Izd', (Derecha sobre izquierda) ' Izq s Der', 'Ninguna'															
+No				Smoke	Fumas: Si / No															
+172				Height	Altura (en centímetros)															
+6				ALG	Calificación numérica obtenida en álgebra. Usa NP para no presentado y NC, para no compensable, si procede															
+7,2				ANM	Calificación numérica obtenida en análisis matemático. Usa NA para no presentado y NC, para no compensable, si procede															
+NC				FP	Calificación numérica obtenida en fundamentos de programación. Usa NA para no presentado y NC, para no compensable, si procede															
+4				DCS	Calificación numérica obtenida en Datos Ciencia y Sociedad. Usa NA para no presentado y NC, para no compensable, si procede															
+5,6				MD	Calificación numérica obtenida en Matemática Discreta. Usa NA para no presentado y NC, para no compensable, si procede															
+2				HSt	Horas de trabajo DIARIAS relacionadas con los estudios, además de la asistencia a clase. 															
+5				Hwork	¿Tienes un trabajo remunerado además del estudio ?. Indica las horas de trabajo SEMANALES. 0 indica que no tiene otro trabajo.															
+Me parece que es una asignatura dinámica y se hacen amenas las clases.				Comentarios	OBLIGATORIO: Campo de texto libre para incluir comentarios que consideres sobre la asignatura. 															
+					Vuestos comentarios ayudarán a mejorar y permitirán procesar texto.															
+					El primer valor es un ejemplo de registro															
+				DEJAD EL MÍNIMO NÚMERO DE HUECOS POSIBLE																
+																				
+				 ES IMPORTANTE QUE LOS DATOS INCLUIDOS SEAN REALES PARA  PODER OBTENER CONCLUSIONES																
+				Completa una fila de esta tabla con tus datos. Los utilizaréis para hacer un autoanálisis.																
+	FechaNac(DD-MM-YYY)	Id	Age	Sex	Wr.Hnd	NW.Hnd	Fold	Pulse	Clap	Exer	Smoke	Height	ALG	ANM	FP	DCS	MD	HSt	Hwork	Comentarios
+Registro Ejemplo	20-01-1969	martsobm	53	M	22	Derecha	Izquierdo	65	Der s Izq	2	No	178	NP	7	6	4	3.8	5	37,5	Es la primera toma de contacto con el análsis de datos reales. Me resultará de gran utilidad.
+	18-11-2003	pedelu	18	M	18	Derecha	Izquierdo	50	Der s Izq	5	No	180	10	9.62	NP	8.3	9.3	1.5	10	Continuación de DCS pero menos teórico y más práctico
+	19-08-2003	salgis	18	M	19	Derecha	Derecho	73	Der s Izq	0	No	173	2.8	4		5.11	5.55	2	0	Parece interesante.
+	15-03-2003	garfal	18	F	18	Izquierda	Izquierdo	71	Der s Izq	0	No	163	6.4	6.65		6.5	5.8	3	8	Seguimiento de DCS, pero parece un poco más práctico
+	24-06-2003	silobor	18	F	18	Derecha	Derecho	66	Der s Izq	0	No	164	7.1	7.8		7.5	7	3	1	Parece denso y complejo
+	21-6-2003	jamarlli	18	M	16	Derecha	Derecho	60	Der s Izq	4	No	180	9.5	9.2	9.5	9.0	9.4	5	3	Tiene buena pinta
+	13-05-2003	mabalo3	18	M	20	Izquierda	Izquierdo	96	Izq s Der	6	No	175	1.9	3.4		5.2	2.2	1	0	Antes que nada tengo que saber bien de qué trata la asignatura porque de momento no la entiendo muy bien pero sé que es muy importante para mi futuro en la carrera por todos los temas que se dan y que creo que es una base de todo en lo que nos estamos especializando. 
+	6-9-2003	esaia	18	F	16	Derecha	Derecho	63	Der s Izq	3	No	172	6.39	7.23	3.7	6.1	6.3	1	0	Me parece interesante.
+	09-01-2003	bepeos	19	F	14	Derecha	Izquierdo	64	Der s Izq	3	No	167	6	7.31	4.3	6.9	3.5	1	1	Me parece interesante.
+	14-05-2002	omeal	19	M	21	Derecha	Derecho	80	Der s Izq	7	No	172	6.2	9.8	9.3	9.8	6.7	3	6	Creo que es una asignatura básica e importante.
+	30-08-2003	ensabai	18	M	22	Derecha	Derecho	80	Izq s Der	3	No	193	7.67	9.2		8.3	6.4	2	0	
+	25-09-2003	pauhe3	18	F	22	Derecha	Izquierdo	74	Der s Izq	4	No	175	7.9	8.89		8.3	7	3	0	Asignatura interesante para involucrarnos más en el mundo de los datos
+	06-05-2003	monpelau	18	F	16	Derecha	Izquierdo	72	Der s Izq	4	No	167	5.5	8.4		7.8	6.3	1	0	Es una asignatura muy util pero compleja
+	25-02-2003	joenman	18	M	17.5	Derecha	Izquierdo	55	Der s Izq	1	No	180	2.1	4	5	7.3	4.2	2	0	Me parece una asignatura interesante para comprender el funcionamiento de los datos.
+	12-10-2003	mapeper	18	M	16.5	Derecha	Derecho	73	Izq s Der	5	No	180	6.2	8.5		7.7	6.5	2	0	Me parece que puede estar muy interesante ya que trabajaremos con datos.
+	31-08-2000	roara3	21	M	23	Izquierda	Izquierdo	67	Der s Izq	5	Si	186	7.25	6.95		7.2	3.2	6.5	0	Por el momento la asignatura parece interesante y es un puntazo que estemos trabajando con datos reales.
+	11-01-1999	sanpasa2	23	F	20	Derecha	Derecho	90	Der s Izq	1	No	176	7	9.5		8	8	4	3	Parece una asignatura muy util que nos dará  herramientas básicas para tratar datos 
+	14-01-2003	hutoes	19	M	17	Derecha	Izquierdo	90	Der s Izq	1	Si	171	7.2	9.2		9	8.3	3	0	Es una asignatura muy interesante ya que será necesario tener una base a la hora de trabajar con datos en el futuro
+	07-07-2003	mirigui	18	F	18	Derecha	Derecho	71	Der s Izq	2	No	164	6.63	7.5		8.5	8.2	2	0	
+	30-5-2003	ponsval	18	F	20	Derecha	Derecho	72	Der s Izq	4	No	153	7	6.76		7.3	6	3	0	La asignatura parece básica para el grado además de interesante
+	30-08-2002	wilporba	19	M	19	Derecha	Derecho	76	Ninguna	2	No	176	7.8	8.8		9	6	3	0	Parece una asignatura buena.
+	15-01-2003	ivan2	19	M	25	Derecha	Derecho	72	Der s Izq	4	No	195	7.495	7.8	7	8	6.2	1.5	0	Asignatura interesante
+	14-08-2003	pagomar5	18	M	20	Derecha	Izquierdo	79	Izq s Der	3	No	180	7.9	8.5		8.5	7.7	2	0	Asignatura que parece interesante
+	12-11-2003	cansanpo	18	F	14	Derecha	Izquierdo	70	Der s Izq	0	No	167	6	6.67		7.6	1.5	2	2	Asignatura muy práctica, tipo una continuación de dcs, una toma de contacto con el analisis de datos
+	31-07-2003	cargi4	18	M	21	Derecha	Derecho	75	Ninguna	0	No	181	6.8	7.3		7.8	7.4	1	0	Asignatura útil y necesaria para saber cómo manejar los datos, será muy importante e interesante conocerla
+	18-2-2003	brage	18	F	17	Derecha	Derecho	89	Izq s Der	1	No	157	6.8	8.6		7.3	7.9	3	0	
+	11-04-2003	pecaifus	18	M	22	Derecha	Derecho	60	Der s Izq	6	No	187	7	8.52		9.2	8.7	3	0	Parece una asignatura interesante para entender el tratamiento de los datos
+	17-05-2003	jogirpla	18	M	22	Derecha	Derecho	62	Der s Izq	3	No	180	7	8.5	8.5	8.5	7	3	0	Parece una asignatura básica para el correcto tratamiento de los datos.
+	29-05-2003	luxinmo	18	F	17	Derecha	Izquierdo	68	Der s Izq	0	No	160						3	0	Pinta una buena asignatura
+	03-04-2003	jopeira	18	M	17	Derecha	Derecho	45	Izq s Der	4	No	175	8.13	9.81		9.3	9.2	4	12	Todo el mundo está poniendo lo mismo, que es interesante y poco más
+	03-04-2003	sermacas	18	M	17	Derecha	Izquierdo	72	Der s Izq	2	No	180	NC	6.2		7.6	NC	3	0	Asignatura interesante, como DCS
+	10-11-2002	diemarso	19	M	19	Derecha	Izquierdo	69	Der s Izq	0	Si	179	6.87	6.98	8	7.2	7.3	2	0	
+	27/9/2003	sanmuoz7	18	M	21,5	Derecha	Derecho	72	Der s Izq	0	Si	184	5	06.06	NC	NC	NC	2	0	Continuación de DCS, para aprender como emplear los datos.
+	22/9/2003	herbea	18	M	22	Derecha	Derecho	67	Der s Izq	4	No	170	6.8	6.3	NP	8.3	7.5	3	0	Interesante, pero compleja
+	18-04-2003	ancanbel	18	M	22	Derecha	Derecho	70	Der s Izd	1	No	180	7.8	9.3		7.8	9.5	0.5	10	Continuación de DCS enfocada a trabajar con R
+	26-05-2003	mahemar	18	M	20	Izquierda	Derecho	80	Izq s Der	4	No	180	5.5	6.6	NC	7.7	3.4	4	0	Asignatura parecida a DCS pero más enfocada a la recogida de datos 
+	2-10-2003	romaren	18	F	20	Derecha	Derecho	70	Der s Izq	2	No	157	7.2	8.47		7.70	6.8	3	0	La asignatura ayuda a saber cómo funciona R y a aprender cómo se trabaja en el programa
+	03-07-2003	arcaya	18	F	18	Derecha	Derecho	72	Der s Izq	0	No	172	7.7	7.23	NC	7.1	7	2	0	Parecida a DCS
+	23/11/2003	gavalba	18	M	21	Derecha	Derecho	73	Der s Izq	3	No	183	7.5	8	7	6.50	7.45	5	6	De primeras no me gusta nada,el profesor no ayuda
+	30-10-2003	pagasllo	18	M	19	Derecha	Derecho	70	Der s Izq	4	Si	179	6.4	8.25	6.5	6.75	6.9	0	5	
+	16/07/2001	carhepar	20	M	20	Derecha	Derecho	48	Izq s Der	3	No	187	NC	6.3		6.5	NC	2	0	Tengo ganas de aprender a tratar datos
+	24-04-2003	momali	18	F	19	Derecha	Izquierdo	80	Izq s Der	0	No	167	3.2	7	NC	6.5	NC	3	0	Parece una asignatura similar a DCS para continuar con el aprendizaje de tratamiento de datos
+	23-12-2003	caupermi	18	M	22	Derecha	Derecho	60	Ninguna	4	No	197	7.7	8.33		8.3	7.8	2	0	Parece como DCS pero más complicado
+	01-04-2003	galviam	18	F	18	Derecha	Derecho	68	Izq s Der	4	No	169	5.88	7.52		3.6	5.9	3	2	Continuación DCS
+	01-01-2003	luconvi	18	M	20	Derecha	Izquierdo	80	Der s Izq	6	No	174	6.535	                   8.37	6	7.4	6.6	1	12	Continuación DCS, pero más complejo
+	17-01-2002	armonfe	20	M	21	Derecha	Derecho	84	Der s Izq	3	No	180	8	8.3	8.6	7.6	7	5	0	Es necesario para poder realizar cualquier análisis y poder utilizar los datos de forma eficiente
+	03-01-2002	mamama8	20	F	18	Derecha	Derecho	70	Izq s Der	2	No	164	7	8	6	6.5	6	2	3	
+	20-11-2003	ainaro	18	F	18	Derecha	Derecho	85	Der s Izq	3	No	158	6.6	8.4		7.3	8.2	2	0	Nos puede ayudar a analizar los datos más profundamente
+	03-02-2003	riclepas	19	F	20	Derecha	Derecho	65	Der s Izq	3	No	167	6.2	8		8	6.4	1	0	
+	26-02-2003	rusacas	18	M	17	Derecha	Derecho	80	Der s Izq	3	No	170	6	7	NC	9	6	2	0	De momento interesante
+	22-03-2003	pasicar	18	M	18	Derecha	Derecho	80	Der s Izq	4	No	178	5	5	5	5	5	2	0	Si,jaja jo també
+	21-01-2003	agonmand	19	F	15	Derecha	Izquierdo	78	Der s Izq	2	Si	169	5.9	7.5		6.4	2	2	0	
+	23-07-2003	caracas2	18	M	20	Derecha	Derecho	66	Izq s Der	3	No	180	6.41	7.22		9	6.3	1	5	Me gusta jugar al parchís.
+	17-01-2003	jamonde	19	M	20	Derecha	Derecho	69	Der s Izq	3	No	171	6	6		4	6	1	0	DCS 2.0
+	14-09-2003	bepasan3	18	M	20	Derecha	Derecho	61	Der s Izq	3	No	176	7.8	9.2		8.2	6.6	2	0	Continuacion de DCS
+	24-07-2003	aluenjor	18	M	20	Derecha	Izquierdo	60	Der s Izq	3	No	176	6.4	8.2		8	5.4	1	0	Continuación DCS
+	14-10-2003	mavasanz	18	M	22	Derecha	Derecho	59	Ninguna	4	No	185	6	8.6	6	8	6	1	0	Asignatura que parece bastante interesante si se imparte de forma correcta y con los medios y la atención necesaria.
+	03-06-2003	lusoi	18	F	21	Derecha	Derecho	80	Der s Izq	1	No	173	NP					2	0	A todos parece gustarles la asignatura
+	14-03-2003	airoso	18	F	18	Derecha	Izquierdo	71	Izq s Der	2	No	170	6.8	7.6		6.4	1.9	1	2	Me oarece interesante e imprescindible para tener una toma de contacto con los datos
+	15-01-2003	graboled	19	F	21	Izquierda	Derecho	40	Izq s Der	6	No	184	5	4		6.8	4.4	1	1	Interesante
+	15-4-2003	maumau	18	M	22	Derecha	Izquierdo	70	Der s Izq	1	No	176	3.3	7.45		7	5.5	2	0	Me parece interesante para trabajar con datos
+	26-02-2003	humgi	18	M	20	Derecha	Derecho	60	Der s Izq	3	No	182	8.6	8.5		9	7.6	0	2	Util y diferente
+	24-12-2003	pegilmar	18	M	19	Derecha	Derecho	65	Der s Izq	4	No	178	7.6	8.1		8.1	7.2	1.5	0	Practica e interesante
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+																				
+				Exer	Cuántos días a la semana realizas ejercicio físico. Numérica de 0-7															

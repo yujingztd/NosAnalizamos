@@ -1,0 +1,30 @@
+---
+title: "Nos Analizamos"
+author: "Yu Jing Zhou"
+date: "2026-05-04"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+# 1. Elegir plantilla
+# 2. Cargar librerías (pracma, p_load)
+# 3. Borrar todas las variables rm(list=ls())
+# 4. Cargar los datos
+#   - Averiguar codificación si los datos son de tipo texto
+#   - ReadLines(NOT TABULAR; - LECT. TABULAR(readr)
+```
+
+
+
+Importación de los datos
+
+```{r}
+library(readr)
+
+datos <- read_tsv("data/NosAutoanalizamos2026.tsv", skip = 28)
+```
+
