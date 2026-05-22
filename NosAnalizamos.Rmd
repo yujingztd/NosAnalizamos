@@ -31,7 +31,8 @@ if (!require(pacman)) install.packages("pacman")
 pacman::p_load(
   readr,
   tidyverse,
-  dplyr
+  dplyr,
+  knitr
 )
 ```
 
@@ -51,5 +52,28 @@ datos <- datos %>%
         str_replace(",", ".") %>%    
         str_replace("^NC$", "3") %>% 
         as.numeric()))
+```
+
+Estadísticos
+
+```{r}
+tabla_est <- datos %>%
+  select(ALG, ANM, FP, DCS, MD) %>%
+  pivot_longer(
+    cols = everything(),
+    names_to = "Asignatura",
+    values_to = "Nota") %>%
+  group_by(Asignatura) %>%
+  summarise(
+    val_min = round(min(Nota, na.rm = TRUE), 2),
+    percentil_25 = round(quantile(Nota, 0.25, na.rm = TRUE), 2),
+    mediana = round(median(Nota, na.rm = TRUE), 2),
+    madia = round(mean(Nota, na.rm = TRUE), 2),
+    desv_tip = round(sd(Nota, na.rm = TRUE), 2),
+    percentil_75 = round(quantile(Nota, 0.75, na.rm = TRUE), 2),
+    val_max = round(max(Nota, na.rm = TRUE), 2),
+  )
+
+tabla_est %>% kable()
 ```
 
