@@ -32,7 +32,8 @@ pacman::p_load(
   readr,
   tidyverse,
   dplyr,
-  knitr
+  knitr,
+  GGally
 )
 ```
 
@@ -68,7 +69,7 @@ tabla_est <- datos %>%
     val_min = round(min(Nota, na.rm = TRUE), 2),
     percentil_25 = round(quantile(Nota, 0.25, na.rm = TRUE), 2),
     mediana = round(median(Nota, na.rm = TRUE), 2),
-    madia = round(mean(Nota, na.rm = TRUE), 2),
+    media = round(mean(Nota, na.rm = TRUE), 2),
     desv_tip = round(sd(Nota, na.rm = TRUE), 2),
     percentil_75 = round(quantile(Nota, 0.75, na.rm = TRUE), 2),
     val_max = round(max(Nota, na.rm = TRUE), 2),
@@ -77,3 +78,25 @@ tabla_est <- datos %>%
 tabla_est %>% kable()
 ```
 
+Relaciones
+
+```{r}
+notas <- datos %>% select(ALG, ANM, FP, DCS, MD)
+
+ggpairs(notas, title = "Matriz de Relaciones entre Asignaturas")
+
+
+cor_pearson <- cor(notas, use = "pairwise.complete.obs", method = "pearson")
+cor_pearson 
+
+cov_pearson <- cov(notas, use = "pairwise.complete.obs", method = "pearson")
+cov_pearson
+
+cor_spearman <- cor(notas, use = "pairwise.complete.obs", method = "spearman")
+cor_spearman
+
+cov_spearman <- cov(notas, use = "complete.obs", method = "spearman")
+cov_spearman
+```
+
+las dos variables con la correlación más alta son Álgebra y Análisis Matemático si usamos Pearson, y Matemática Discreta Y Fundamentos de la Programación si usamos Spearman.
