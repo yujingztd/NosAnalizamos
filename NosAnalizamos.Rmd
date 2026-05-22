@@ -2,11 +2,13 @@
 title: "Nos Analizamos"
 author: "Yu Jing Zhou"
 date: "`r Sys.Date()`"
-output: html_document
+output:
+  pdf_document: default
+  html_document: default
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 ```
 
 ```{r}
@@ -21,7 +23,6 @@ knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
 # Si tiene un 50% de datos faltantes, lo sensato sería quitarlo
 ```
 
-Carga de las librerías
 
 ```{r}
 # Carga de las librerías
@@ -37,9 +38,6 @@ pacman::p_load(
 )
 ```
 
-
-
-Importación de los datos
 
 ```{r}
 datos <- read_tsv("data/NosAutoanalizamos2022.tsv", skip = 25) %>%
@@ -61,7 +59,7 @@ notas_limpias <- datos %>%
 save(notas_limpias, file = "data/Notas.Rdata")
 ```
 
-Estadísticos
+# Estadísticos
 
 ```{r}
 tabla_est <- datos %>%
@@ -84,7 +82,7 @@ tabla_est <- datos %>%
 tabla_est %>% kable()
 ```
 
-Relaciones
+# Relaciones
 
 ```{r}
 notas <- datos %>% select(ALG, ANM, FP, DCS, MD)
@@ -108,7 +106,7 @@ cov_spearman
 Las dos variables con la correlación más alta son Álgebra y Análisis Matemático si usamos Pearson, y Matemática Discreta Y Fundamentos de la Programación si usamos Spearman.
 
 
-Boxplot
+# Boxplot
 
 ```{r}
 datos_boxplot <- datos %>%
@@ -118,7 +116,7 @@ datos_boxplot <- datos %>%
                values_to = "Nota") %>% 
   filter(!is.na(Nota)) 
 
-ggplot(datos_boxplots, aes(x = Asignatura, y = Nota, fill = Asignatura)) +
+ggplot(datos_boxplot, aes(x = Asignatura, y = Nota, fill = Asignatura)) +
   geom_boxplot(alpha = 0.7, outlier.colour = "red") +
   scale_y_continuous(limits = c(0, 10), breaks = seq(0, 10, 1)) +
   labs(title = "Calificaciones por Asignatura",
@@ -127,7 +125,7 @@ ggplot(datos_boxplots, aes(x = Asignatura, y = Nota, fill = Asignatura)) +
   theme_minimal()
 ```
 
-Con sexo
+# Con sexo
 
 ```{r}
 datos_boxplot_sexo <- datos %>%
@@ -149,7 +147,7 @@ ggplot(datos_boxplot_sexo, aes(x = Asignatura, y = Nota, fill = Sex)) +
   theme_minimal()
 ```
 
-Alumno, Nota, Asignatura
+# Alumno, Nota, Asignatura
 
 ```{r}
 datos_completos <- datos %>%
