@@ -105,4 +105,25 @@ cov_spearman <- cov(notas, use = "complete.obs", method = "spearman")
 cov_spearman
 ```
 
-las dos variables con la correlación más alta son Álgebra y Análisis Matemático si usamos Pearson, y Matemática Discreta Y Fundamentos de la Programación si usamos Spearman.
+Las dos variables con la correlación más alta son Álgebra y Análisis Matemático si usamos Pearson, y Matemática Discreta Y Fundamentos de la Programación si usamos Spearman.
+
+
+Boxplot
+
+```{r}
+datos_boxplots <- datos %>%
+  select(ALG, ANM, FP, DCS, MD) %>%
+  pivot_longer(cols = everything(),
+               names_to = "Asignatura",
+               values_to = "Nota") %>% 
+  filter(!is.na(Nota)) 
+
+ggplot(datos_boxplots, aes(x = Asignatura, y = Nota, fill = Asignatura)) +
+  geom_boxplot(alpha = 0.7, outlier.colour = "red") +
+  scale_y_continuous(limits = c(0, 10), breaks = seq(0, 10, 1)) +
+  labs(title = "Calificaciones por Asignatura",
+       x = "Asignatura",
+       y = "Nota") +
+  theme_minimal()
+```
+
