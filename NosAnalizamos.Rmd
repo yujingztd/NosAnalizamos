@@ -53,6 +53,12 @@ datos <- datos %>%
         str_replace(",", ".") %>%    
         str_replace("^NC$", "3") %>% 
         as.numeric()))
+
+
+notas_limpias <- datos %>% 
+  select(ALG, ANM, FP, DCS, MD)
+
+save(notas_limpias, file = "data/Notas.Rdata")
 ```
 
 Estadísticos
