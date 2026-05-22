@@ -149,3 +149,44 @@ ggplot(datos_boxplot_sexo, aes(x = Asignatura, y = Nota, fill = Sex)) +
   theme_minimal()
 ```
 
+Alumno, Nota, Asignatura
+
+```{r}
+datos_completos <- datos %>%
+  drop_na(ALG, ANM, FP, DCS, MD) %>%
+    pivot_longer(
+    cols = c(ALG, ANM, FP, DCS, MD),
+    names_to = "Asignatura",
+    values_to = "Nota")
+
+ggplot(datos_completos, aes(x = Id, y = Nota, color = Asignatura)) +
+  geom_line(aes(group = Asignatura)) +
+  geom_point(size = 2) +
+  scale_y_continuous(limits = c(0, 10), breaks = seq(0, 10, 1)) +
+  
+  labs(
+    title = "Evolución de Calificaciones por Alumno",
+    x = "Alumno (Id)",
+    y = "Nota") +
+  
+  theme_minimal() +
+  theme(
+    axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1))
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
