@@ -21,7 +21,20 @@ knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
 # Si tiene un 50% de datos faltantes, lo sensato sería quitarlo
 ```
 
-- Factor: **`r Factor`**
+Carga de las librerías
+
+```{r}
+# Carga de las librerías
+
+if (!require(pacman)) install.packages("pacman")
+
+pacman::p_load(
+  readr,
+  tidyverse,
+  dplyr
+)
+```
+
 
 
 Importación de los datos
