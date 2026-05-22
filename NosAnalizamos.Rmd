@@ -111,7 +111,7 @@ Las dos variables con la correlación más alta son Álgebra y Análisis Matemá
 Boxplot
 
 ```{r}
-datos_boxplots <- datos %>%
+datos_boxplot <- datos %>%
   select(ALG, ANM, FP, DCS, MD) %>%
   pivot_longer(cols = everything(),
                names_to = "Asignatura",
@@ -124,6 +124,28 @@ ggplot(datos_boxplots, aes(x = Asignatura, y = Nota, fill = Asignatura)) +
   labs(title = "Calificaciones por Asignatura",
        x = "Asignatura",
        y = "Nota") +
+  theme_minimal()
+```
+
+Con sexo
+
+```{r}
+datos_boxplot_sexo <- datos %>%
+  select(Sex, ALG, ANM, FP, DCS, MD) %>%
+  pivot_longer(cols = c(ALG, ANM, FP, DCS, MD),
+               names_to = "Asignatura",
+               values_to = "Nota") %>% 
+  filter(!is.na(Nota)) %>%
+  filter(!is.na(Sex))
+
+ggplot(datos_boxplot_sexo, aes(x = Asignatura, y = Nota, fill = Sex)) +
+  geom_boxplot(alpha = 0.7, outlier.colour = "red") +
+  scale_y_continuous(limits = c(0, 10), breaks = seq(0, 10, 1)) +
+  labs(
+    title = "Boxplot Asignatura, Notas y Sexo",
+    x = "Asignatura",
+    y = "Calificación Numérica",
+    fill = "Sexo del Alumno") +
   theme_minimal()
 ```
 
