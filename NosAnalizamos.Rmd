@@ -43,6 +43,7 @@ Importación de los datos
 datos <- read_tsv("data/NosAutoanalizamos2022.tsv", skip = 25,
   na = c("", "NA", "NP", "NC")) %>% filter(!is.na(Id)) %>% select(-1) %>%
   mutate(Wr.Hnd = as.numeric(str_replace(Wr.Hnd, ",", ".")),
-         ANM = as.numeric(str_replace(ANM, ",", ".")))
+         ANM = as.numeric(str_replace(ANM, ",", "."))) %>% 
+  filter(Id != "martsobm")
 ```
 
