@@ -1,7 +1,7 @@
 ---
 title: "Nos Analizamos"
 author: "Yu Jing Zhou"
-date: "2026-05-04"
+date: "`r Sys.Date()`"
 output: html_document
 ---
 
@@ -40,6 +40,9 @@ pacman::p_load(
 Importación de los datos
 
 ```{r}
-datos <- read_tsv("data/NosAutoanalizamos2022.tsv", skip = 25)
+datos <- read_tsv("data/NosAutoanalizamos2022.tsv", skip = 25,
+  na = c("", "NA", "NP", "NC")) %>% filter(!is.na(Id)) %>% select(-1) %>%
+  mutate(Wr.Hnd = as.numeric(str_replace(Wr.Hnd, ",", ".")),
+         ANM = as.numeric(str_replace(ANM, ",", ".")))
 ```
 
