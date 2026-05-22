@@ -40,8 +40,6 @@ pacman::p_load(
 Importación de los datos
 
 ```{r}
-library(readr)
-
-datos <- read_tsv("data/NosAutoanalizamos2026.tsv", skip = 28)
+datos <- read_tsv("data/NosAutoanalizamos2022.tsv", skip = 25)
 ```
 
