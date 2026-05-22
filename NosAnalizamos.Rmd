@@ -40,10 +40,16 @@ pacman::p_load(
 Importación de los datos
 
 ```{r}
-datos <- read_tsv("data/NosAutoanalizamos2022.tsv", skip = 25,
-  na = c("", "NA", "NP", "NC")) %>% filter(!is.na(Id)) %>% select(-1) %>%
-  mutate(Wr.Hnd = as.numeric(str_replace(Wr.Hnd, ",", ".")),
-         ANM = as.numeric(str_replace(ANM, ",", "."))) %>% 
-  filter(Id != "martsobm")
+datos <- read_tsv("data/NosAutoanalizamos2022.tsv", skip = 25) %>%
+  filter(!is.na(Id)) %>% select(-1) 
+
+datos <- datos %>%
+  mutate(Wr.Hnd = as.numeric(str_replace(Wr.Hnd, ",", "."))) %>%
+  filter(Id != "martsobm") %>%
+  mutate(across(c(ALG, ANM, FP, DCS, MD),
+      ~ .x %>% 
+        str_replace(",", ".") %>%    
+        str_replace("^NC$", "3") %>% 
+        as.numeric()))
 ```
 
