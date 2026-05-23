@@ -173,8 +173,50 @@ ggplot(datos_completos, aes(x = Id, y = Nota, color = Asignatura)) +
 ```
 
 
+# Respuestas a las preguntas planteadas sobre el fichero NosAnalizamos2026
 
+Aclaración: para poder anañizar los datos del tsv de 20206, usé otro rmd independiente para poder responder a las preguntas.
 
+1. ¿Qué edad, expresada en años (con decimales) tiene el alumno más joven a fecha 01/02/2026.
+
+18.12 
+
+2. Cuántos alumnos simultanean trabajo y estudios.
+
+14, hemos seleccionado aquellos que tenga un Hwork > 0.
+
+3. Hay más hombres o más mujeres fumadoras.
+
+Hay más hombres, que son 7, frente a 0 mujeres fumadoras.
+
+4. Cuál es el valor medio y la varianza de la variable Wr.Hnd según el sexo.
+
+Para las mujeres, la media es de 18 cm y la varianza es de 3.72 cm.
+Pra los hombres, la media es de 20 cm y la varianza es de 1.73 cm.
+
+5. Determina si existe relación entre el sexo y la mano con la que se escribe  (NW.Hnd)
+
+Al tratarse de variables categóricas, aplicamos el test de chi-cuadrado. Después del anális, nos ha dado un p-valor > 0.05, por lo que sí existe relación entre sexo y la mano con la que se escribe.
+
+6. Existe una relación lineal entre la altura (Height) y la distancia del extremo del meñique al extremo del pulgar de la mano con la que escribimos (Wr.Hnd)
+
+La correlación entre estas dos variables continuas es de aproximadamente 0.43, indica que existe una correlación lineal positiva pero moderada/débil.
+
+7. El identificador de Hampel detecta algún outlier en la variable altura.
+
+No se ha detectado ningún outlier con el identificador de Hampel.
+
+8. Considera la asignatura FP. Si queremos realizar una imputación generalizada usando la media, ¿qué valor deberíamos utilizar ?
+
+Al calcular la media de las notas de FP me he encontrado con que ese valor está fuera del rango [0, 10], da aproximadamente 23, que no tiene sentide. Pero revisando los datos, se ve que hay alumnos que han puesto notas que superan el 10, de ahí que la media sea tan grande.
+
+9.Define una nueva variable (PulseCat) a partir del ritmo cardíaco (Pulse), con dos valores PulseH, si Pulse>=65 y PulseL si Pulse<65. ¿Qué valores utilizarías para imputar los valores faltantes de las notas de FP, dependiendo del valor de PulseCat (imputación por casos similares)
+
+Primero transformamos la variable numérica Pulse en la categórica PulseCat. Luego, calculamos dos medias distintas para FP. A los alumnos no presentados en FP que tengan un ritmo cardíaco alto (PulseH) se les imputaría el valor de la primera fila, es decir 32.2, y a los de ritmo bajo (PulseL), el de la segunda fila, 17.2.
+
+10.¿Qué podemos decir, como científicos de datos, ante esta frase referida a nuestros datos ? "El ritmo cardíaco está ligado con la cantidad de sangre que llega al cerebro, por tanto existirá una relación lineal directa esta esta variable y las calificaciones obtenidas en ALG".
+
+Como científicos de datos, creo que deberíamos de rechazar esta afirmación. Es un error confundir una supuesta hipótesis fisiológica con causalidad matemática. El rendimiento académico en Álgebra es un fenómeno multifactorial (horas de estudio, conocimientos previos). Asumir que existe una relación lineal directa (a más latidos, sistemáticamente mejor nota) no tiene base estadística. Si calculamos la correlación entre pulsaciones y las notas de álgebra observaremos que el coeficiente es cercano a cero, lo cual desmonta por completo la hipótesis planteada en la frase.
 
 
 
