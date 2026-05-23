@@ -217,16 +217,3 @@ Primero transformamos la variable numérica Pulse en la categórica PulseCat. Lu
 10.¿Qué podemos decir, como científicos de datos, ante esta frase referida a nuestros datos ? "El ritmo cardíaco está ligado con la cantidad de sangre que llega al cerebro, por tanto existirá una relación lineal directa esta esta variable y las calificaciones obtenidas en ALG".
 
 Como científicos de datos, creo que deberíamos de rechazar esta afirmación. Es un error confundir una supuesta hipótesis fisiológica con causalidad matemática. El rendimiento académico en Álgebra es un fenómeno multifactorial (horas de estudio, conocimientos previos). Asumir que existe una relación lineal directa (a más latidos, sistemáticamente mejor nota) no tiene base estadística. Si calculamos la correlación entre pulsaciones y las notas de álgebra observaremos que el coeficiente es cercano a cero, lo cual desmonta por completo la hipótesis planteada en la frase.
-
-
-
-
-
-
-
-
-
-
-
-
-
